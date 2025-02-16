@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>👋 Hi, I&#39;m Elena!</title>
-    <link>//localhost:1313/</link>
-    <description>Recent content on 👋 Hi, I&#39;m Elena!</description>
+    <title>Samples on 👋 Hi, I&#39;m Elena!</title>
+    <link>//localhost:1313/samples/</link>
+    <description>Recent content in Samples on 👋 Hi, I&#39;m Elena!</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My New Page</title>
-      <link>//localhost:1313/about/</link>
-      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
-      <description>&lt;p&gt;Welcome to my new Hugo page!&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/samples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concept: Flows</title>
       <link>//localhost:1313/samples/concept/</link>

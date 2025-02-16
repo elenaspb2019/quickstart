@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="By following these troubleshooting steps, you can resolve common issues and ensure smooth operation of your Oracle SDK for Java applications.
+Common Issue Troubleshooting Steps Authentication Errors Check API key, secret key, and tenancy OCID. Ensure the region in your config matches OCI resources. Verify network connectivity, firewall, and proxy settings. API Rate Limiting Implement rate limiting. Use exponential backoff for retries. Connection Timeouts Check network connectivity and latency. Adjust timeout values in the HTTP client. Optimize network settings. SDK Version Compatibility Upgrade to the latest SDK version. Resolve dependency conflicts using Maven or Gradle. SDK Configuration Issues Review config.properties. Ensure all required dependencies are included. Debugging Tips
+" />
+<meta name="keywords" content="homepage, blog" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="//localhost:1313/samples/troubleshooting/" />
+
+
+    <title>
+        
+            Troubleshooting Oracle SDK for Java :: 👋 Hi, I&#39;m Elena!  — A simple theme for Hugo
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Troubleshooting Oracle SDK for Java">
+  <meta itemprop="description" content="By following these troubleshooting steps, you can resolve common issues and ensure smooth operation of your Oracle SDK for Java applications.
+Common Issue Troubleshooting Steps Authentication Errors Check API key, secret key, and tenancy OCID. Ensure the region in your config matches OCI resources. Verify network connectivity, firewall, and proxy settings. API Rate Limiting Implement rate limiting. Use exponential backoff for retries. Connection Timeouts Check network connectivity and latency. Adjust timeout values in the HTTP client. Optimize network settings. SDK Version Compatibility Upgrade to the latest SDK version. Resolve dependency conflicts using Maven or Gradle. SDK Configuration Issues Review config.properties. Ensure all required dependencies are included. Debugging Tips">
+  <meta itemprop="datePublished" content="2025-02-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="152">
+  <meta itemprop="image" content="//localhost:1313/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/">
+  <meta name="twitter:title" content="Troubleshooting Oracle SDK for Java">
+  <meta name="twitter:description" content="By following these troubleshooting steps, you can resolve common issues and ensure smooth operation of your Oracle SDK for Java applications.
+Common Issue Troubleshooting Steps Authentication Errors Check API key, secret key, and tenancy OCID. Ensure the region in your config matches OCI resources. Verify network connectivity, firewall, and proxy settings. API Rate Limiting Implement rate limiting. Use exponential backoff for retries. Connection Timeouts Check network connectivity and latency. Adjust timeout values in the HTTP client. Optimize network settings. SDK Version Compatibility Upgrade to the latest SDK version. Resolve dependency conflicts using Maven or Gradle. SDK Configuration Issues Review config.properties. Ensure all required dependencies are included. Debugging Tips">
+
+
+
+    <meta property="og:url" content="//localhost:1313/samples/troubleshooting/">
+  <meta property="og:site_name" content="👋 Hi, I&#39;m Elena!">
+  <meta property="og:title" content="Troubleshooting Oracle SDK for Java">
+  <meta property="og:description" content="By following these troubleshooting steps, you can resolve common issues and ensure smooth operation of your Oracle SDK for Java applications.
+Common Issue Troubleshooting Steps Authentication Errors Check API key, secret key, and tenancy OCID. Ensure the region in your config matches OCI resources. Verify network connectivity, firewall, and proxy settings. API Rate Limiting Implement rate limiting. Use exponential backoff for retries. Connection Timeouts Check network connectivity and latency. Adjust timeout values in the HTTP client. Optimize network settings. SDK Version Compatibility Upgrade to the latest SDK version. Resolve dependency conflicts using Maven or Gradle. SDK Configuration Issues Review config.properties. Ensure all required dependencies are included. Debugging Tips">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="samples">
+    <meta property="article:published_time" content="2025-02-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-01T00:00:00+00:00">
+    <meta property="og:image" content="//localhost:1313/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-02-01 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                hello dear friend</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/">Home</a></li><li><a href="/samples/">Samples</a></li>
+        <ul class="submenu">
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">en</a>
+                <div class="dropdown-content">
+                </div>
+            </li>
+        </ul>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="//localhost:1313/samples/troubleshooting/">Troubleshooting Oracle SDK for Java</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>By following these troubleshooting steps, you can resolve common issues and ensure smooth operation of your Oracle SDK for Java applications.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Common Issue</strong></th>
+          <th><strong>Troubleshooting Steps</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Authentication Errors</strong></td>
+          <td>Check API key, secret key, and tenancy OCID. Ensure the region in your config matches OCI resources. Verify network connectivity, firewall, and proxy settings.</td>
+      </tr>
+      <tr>
+          <td><strong>API Rate Limiting</strong></td>
+          <td>Implement rate limiting. Use exponential backoff for retries.</td>
+      </tr>
+      <tr>
+          <td><strong>Connection Timeouts</strong></td>
+          <td>Check network connectivity and latency. Adjust timeout values in the HTTP client. Optimize network settings.</td>
+      </tr>
+      <tr>
+          <td><strong>SDK Version Compatibility</strong></td>
+          <td>Upgrade to the latest SDK version. Resolve dependency conflicts using Maven or Gradle.</td>
+      </tr>
+      <tr>
+          <td><strong>SDK Configuration Issues</strong></td>
+          <td>Review <code>config.properties</code>. Ensure all required dependencies are included.</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Debugging Tips</strong></p>
+<ul>
+<li><strong>Enable Logging:</strong> Capture request, response, and error details.</li>
+<li><strong>Inspect HTTP Requests:</strong> Use network analysis tools.</li>
+<li><strong>Check Error Messages:</strong> Analyze logs for root causes.</li>
+<li><strong>Isolate the Problem:</strong> Reproduce the issue in a minimal test environment.</li>
+<li><strong>Consult Oracle Docs &amp; Community:</strong> Find known issues and solutions.</li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="site-footer">
+    <p>📜 2025 © Elena Baskakova | Built with <a href="https://gohugo.io" target="_blank">Hugo</a>, 
+    styled with Hello Friend NG, and fueled by ☕ & curiosity.</p>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
